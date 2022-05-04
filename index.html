@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volumn Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="vc_container">
+        <div class="vc_categories">
+            <ul class="vc_category_list">
+                <li class="tab_box active" data-id="cat1" class="active">
+                    <div class="product_box" style="display: flex;" data-id="product_list">
+                        <div class="icon_back">
+                            <img src="images/cat1.svg" alt="">
+                        </div>
+                        <div class="heading_area">
+                            <span>Living room</span><br />
+                            <div class="invisible_area" id="action1">
+                                <span class="total_value1"></span><br /><span class="total_value2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </li>
+                <li class="tab_box" data-id="cat2">
+                    <div class="icon_back">
+                        <img src="images/cat2.svg" alt="">
+                    </div>
+                    <div class="heading_area">
+                        <span>Dining room</span><br />
+                        <div class="invisible_area" id="action2">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat3">
+                    <div class="icon_back">
+                        <img src="images/cat3.svg" alt="">
+                    </div>
+                    
+                    <div class="heading_area">
+                        <span>Kitchen</span><br />
+                        <div class="invisible_area" id="action3">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat4">
+                    <div class="icon_back">
+                        <img src="images/cat3.svg" alt="">
+                    </div>
+                  
+                    <div class="heading_area">
+                        <span>Utilities</span><br />
+                        <div class="invisible_area" id="action4">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat5">
+                    <div class="icon_back">
+                        <img src="images/cat5.svg" alt="">
+                    </div>
+                    
+                    <div class="heading_area">
+                        <span>Bedroom</span><br />
+                        <div class="invisible_area" id="action5">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat6">
+                    <div class="icon_back">
+                        <img src="images/cat6.svg" alt="">
+                    </div>
+                    
+                    <div class="heading_area">
+                        <span>Study</span><br />
+                        <div class="invisible_area" id="action6">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat7">
+                    <div class="icon_back">
+                        <img src="images/cat7.svg" alt="">
+                    </div>
+                   
+                    <div class="heading_area">
+                        <span>Outdoor</span><br />
+                        <div class="invisible_area" id="action7">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="tab_box" data-id="cat8">
+                    <div class="icon_back">
+                        <img src="images/cat8.svg" alt="">
+                    </div>
+                   
+                    <div class="heading_area">
+                        <span>Miscellaneous</span><br />
+                        <div class="invisible_area" id="action8">
+                            <span class="total_value1"></span><br /><span class="total_value2"></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="vc_categories_item_list">
+            <div class="vc_list_area">
+                <div class="vc_item_area active" id="cat1">
+                    <ul class="vc_item_list" id="product_list">
+                        <li class="product_item">
+                            <div><span class="item_no"></span> 2 seater sofa</div>
+                            <span class="item_value1">35.3</span>
+                            <span class="item_value2">1.0</span>
+                            <div class="vc_action_area" data-id="action1">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input class="item_count" type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="product_item">
+                            <div><span class="item_no"></span> 3 seater sofa</div>
+                            <span class="item_value1">53.0</span>
+                            <span class="item_value2">.5</span>
+                            <div class="vc_action_area"  data-id="action1">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input class="item_count" type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat2">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no"></span> Buffet</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action2">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no"></span> Dining table for 8</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action2">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat3">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no"></span> AGA cooker</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action3">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no"></span> Bin</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action3">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat4">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no"></span> Broom</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action4">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no"></span> Dryer</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action4"> 
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat5">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no"></span> Bedside table</div>
+                            <span class="item_value1">42.4</span>
+                            <span class="item_value2">1.2</span>
+                            <div class="vc_action_area" data-id="action5">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> Bunk bed</div>
+                            <div class="vc_action_area" data-id="action5">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat6">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> Computer</div>
+                            <div class="vc_action_area" data-id="action6">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> Desk</div>
+                            <div class="vc_action_area" data-id="action6">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat7">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> BBQ large</div>
+                            <div class="vc_action_area" data-id="action7">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> BBQ portable</div>
+                            <div class="vc_action_area" data-id="action7">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="vc_item_area" id="cat8">
+                    <ul class="vc_item_list">
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> Gym equipment</div>
+                            <div class="vc_action_area" data-id="action8">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus" ><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                        <li class="sub">
+                            <div><span class="item_no">(1X)</span> Small box</div>
+                            <div class="vc_action_area" data-id="action8">
+                                <div><button type="button" class="common minus"><img src="images/minus.svg" alt=""></button></div> 
+                                <div class="text_box"><input type="text"></div> 
+                                <div><button type="button" class="common plus"><img src="images/plus.svg" alt=""></button></div> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    <!-- <script src="js/app3.js"></script> -->
+</body>
+</html>
